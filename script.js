@@ -50,13 +50,23 @@ submitBtn.textContent = "Add Book";
 const myLibrary = [];
 
 // Book constructor responsible for the book object creation
-function Book(title, author, description, pages) {
-    this.title = title;
-    this.id = crypto.randomUUID();
-    this.author = author;
-    this.description = description;
-    this.pages = pages;
-};
+// function Book(title, author, description, pages) {
+//     this.title = title;
+//     this.id = crypto.randomUUID();
+//     this.author = author;
+//     this.description = description;
+//     this.pages = pages;
+// };
+
+class Book {
+    constructor(title, author, description, pages) {
+        this.title = title;
+        this.id = crypto.randomUUID();
+        this.author = author;
+        this.description = description;
+        this.pages = pages;
+    }
+}
 
 // This function calls the book constructor, creates a new book with the details/arguments given, and add the book to the array(myLibrary)
 function addBookToLibrary(title, author, description, pages) {
