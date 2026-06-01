@@ -1,0 +1,38 @@
+body {
+  box-sizing: border-box;
+}
+
+#book-list {
+  display: flex;
+  gap: 10px;
+}
+
+#book-list > li {
+  font-weight: bold;
+}
+
+#title-holder,
+#author-holder,
+#description-holder,
+#pages-holder {
+  display: flex;
+  gap: 5px;
+}
+
+#title-holder > input,
+#author-holder > input,
+#description-holder > input,
+#pages-holder > input {
+  width: 470px;
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 600px;
+  gap: 20px;
+  margin: 15px 0;
+  padding: 10px;
+  box-shadow: 2px 1px 8px 3px gray;
+}
